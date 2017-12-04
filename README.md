@@ -1,4 +1,4 @@
-# Blur 4 primitive
+# Blur for primitive
 
 Simple command line tool to inject blur filter to Michael Fogleman [primitive](https://github.com/fogleman/primitive) SVG output.
 
