@@ -79,11 +79,11 @@ func firstGstartOut(se xml.StartElement) {
 	for _, attr := range se.Attr {
 		fmt.Fprintf(os.Stdout, " %s='%s'", attr.Name.Local, attr.Value)
 	}
-	fmt.Fprintf(os.Stdout, ">\n")
+	fmt.Fprintf(os.Stdout, ">")
 }
 
 func endOut(ee xml.EndElement) {
-	fmt.Fprintf(os.Stdout, "</%s>\n", ee.Name.Local)	
+	fmt.Fprintf(os.Stdout, "</%s>", ee.Name.Local)	
 }
 
 func startOut(se xml.StartElement, close bool) {
@@ -94,7 +94,7 @@ func startOut(se xml.StartElement, close bool) {
 	if close {
 		fmt.Fprintf(os.Stdout, "/")
 	}
-	fmt.Fprintf(os.Stdout, ">\n")
+	fmt.Fprintf(os.Stdout, ">")
 }
 
 func header() {
