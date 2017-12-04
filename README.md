@@ -17,7 +17,7 @@ Clone the repository and type
 
 Execute 
 <pre>
-    ./blur4primitive -
+    ./blur4primitive
 </pre>
 
 from command line to get the command line options.
