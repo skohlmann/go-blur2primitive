@@ -34,7 +34,7 @@ func main() {
 	decoder := xml.NewDecoder(xmlFile)
     openG := 0
 
-	fmt.Fprintf(os.Stdout, "<?xml version='1.0'?>\n")
+//	fmt.Fprintf(os.Stdout, "<?xml version='1.0'?>\n")
 
 	for {
 		t, _ := decoder.Token()
